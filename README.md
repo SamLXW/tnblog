@@ -20,7 +20,7 @@
  运行：web/src/main/java/tnblog/BootApplication
  访问：http://localhost:8080/
  后台：http://localhost:8080/admin
- 账号：默认管理员账号为 admin/12345
+ 账号：默认管理员账号为 admin/touniu2018
 ```
 
 - 更多文档及教程见 [http://mtons.com/dock/tnblog](http://mtons.com/dock/tnblog)
