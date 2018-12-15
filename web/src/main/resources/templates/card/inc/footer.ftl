@@ -26,7 +26,7 @@
         </div>
         <div class="footer-col footer-col-sns hidden-xs hidden-sm">
             <div class="footer-sns">
-                <span>Powered By <a href="http://mtons.com/?copyright" target="_blank">Mtons</a></span>
+                <span>Powered By <a href="#" target="_blank">TNG</a></span>
             </div>
         </div>
     </div>
