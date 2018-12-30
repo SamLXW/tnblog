@@ -15,6 +15,8 @@
  Target Server Version : 50712
  File Encoding         : utf-8
 
+ admin 初始密码：touniuwang2018
+
  Date: 01/11/2018 10:26:54 AM
 */
 
@@ -113,7 +115,7 @@ CREATE TABLE `mto_users` (
 --  Records of `mto_users`
 -- ----------------------------
 BEGIN;
-INSERT INTO `mto_users` VALUES ('1', '2017-08-06 17:52:41', 'example@mtons.com', '2017-10-17 13:24:13', null, '2K862J6QTD1O04EI74HT9VSJAS', '0', 'admin', '超级管理员', '/dist/images/ava/default.png', '2017-07-26 11:08:36', '0', '1', '0', '0', '6', '-2', '0', '-2', '19', '');
+INSERT INTO `mto_users` VALUES ('1', '2017-08-06 17:52:41', 'example@mtons.com', '2017-10-17 13:24:13', null, '2NJUGM8MQBO47NL24ERKVKELU4', '0', 'admin', '超级管理员', '/dist/images/ava/default.png', '2017-07-26 11:08:36', '0', '1', '0', '0', '6', '-2', '0', '-2', '19', '');
 COMMIT;
 
 -- ----------------------------

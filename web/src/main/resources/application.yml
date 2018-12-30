@@ -55,5 +55,6 @@ spring:
 site:
     theme: card
     store:
-      root: d:/data/tnblog/
+      root: E:/DBdata/tnblogData
+#      root: /home/tnblog/data
       size: 2
