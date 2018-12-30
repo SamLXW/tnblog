@@ -7,7 +7,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>web</artifactId>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<dependencies>
 		<dependency>
@@ -54,20 +54,30 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<fork>true</fork>
-					<jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
+					<!-- 指定该Main Class为全局的唯一入口 -->
 					<mainClass>tnblog.BootApplication</mainClass>
+					<layout>ZIP</layout>
 				</configuration>
 				<executions>
 					<execution>
 						<goals>
-							<!-- 用于打包jar -->
-							<goal>repackage</goal>
+							<goal>repackage</goal><!--可以把依赖的包都打包到生成的Jar包中-->
 						</goals>
-						<configuration>
-						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<!--maven打包排除spring-boot内嵌tomcat容器依赖jar-->
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<!--打包后的名称-->
+					<warName>tnblog-web</warName>
+					<packagingExcludes>
+						WEB-INF/lib/tomcat-embed-*.jar,
+						WEB-INF/lib/spring-boot-starter-tomcat-*.jar
+					</packagingExcludes>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
